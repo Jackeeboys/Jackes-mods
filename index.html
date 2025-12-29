@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimMod Hub - FS25 & ETS2</title>
+    <style>
+        :root { --fs-green: #2ecc71; --ets-blue: #3498db; --dark: #121212; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: white; margin: 0; }
+        header { background: #1f1f1f; padding: 2rem; text-align: center; border-bottom: 3px solid var(--fs-green); }
+        
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        .card { background: #222; border-radius: 10px; overflow: hidden; transition: 0.3s; border: 1px solid #333; }
+        .card:hover { transform: translateY(-5px); border-color: var(--fs-green); }
+        
+        .card img { width: 100%; height: 180px; object-fit: cover; background: #444; }
+        .card-content { padding: 15px; }
+        
+        .tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 10px; }
+        .tag-fs { background: var(--fs-green); color: black; font-weight: bold; }
+        .tag-ets { background: var(--ets-blue); color: white; }
+
+        .btn { display: block; text-align: center; background: #444; color: white; text-decoration: none; 
+               padding: 10px; border-radius: 5px; margin-top: 10px; transition: 0.2s; }
+        .btn:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SimMod Hub</h1>
+    <p>Bästa modsen för Farming Simulator 25 & ETS2</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x180?text=John+Deere+FS25" alt="Mod">
+            <div class="card-content">
+                <span class="tag tag-fs">Farming Simulator 25</span>
+                <h3>John Deere 9RX Series</h3>
+                <p>Kraftfull traktor med realistiska ljud och animationer.</p>
+                <a href="#" class="btn">Ladda ner (.zip)</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400x180?text=Scania+V8+ETS2" alt="Mod">
+            <div class="card-content">
+                <span class="tag tag-ets">Euro Truck Simulator 2</span>
+                <h3>Scania NextGen V8 Sound</h3>
+                <p>Open pipe-ljud för Scania R & S. Fullt kompatibel med 1.51+.</p>
+                <a href="#" class="btn">Ladda ner (.scs)</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
